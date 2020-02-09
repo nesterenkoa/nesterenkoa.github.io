@@ -50,6 +50,7 @@ html, body{
 
 .header{
   background: black;
+  padding-bottom: 3.8vw;
 }
 
 .container {
@@ -60,7 +61,7 @@ html, body{
 .general{
   display: flex;
   position: relative;
-  padding: 4.3vw 0;
+  padding: 4.3vw 0 0;
 }
 
 
@@ -147,13 +148,6 @@ html, body{
   color: #a2a2a2;
 }
 
-.divider{
-  display: inline-flex;
-  height: 3px;
-  margin: 2vw 0;
-  background: #949698;
-}
-
 .about {
   display: flex;
   flex-direction: column;
@@ -179,6 +173,35 @@ html, body{
   padding: 5vw 4vw 4.5vw;
 }
 
+.list-social-icons{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.list-social-icons li:not(:last-of-type){
+  margin-right: 5vw;
+}
+
+.link-social-icon{
+  text-decoration: none;
+  color: #b09ea7;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.link-social-icon:hover{
+  color: white;
+}
+
+.link-social-icon i:after {
+  display: inline-block;
+  content: '';
+  width: 1vw;
+}
 .info-experience{
   display: flex;
 }
@@ -187,24 +210,29 @@ html, body{
   width: 61%;
 }
 
-.paragraph-title {
+.paragraph-header {
   display: flex;
+  flex-direction: row;
   align-items: center;
-  text-transform: uppercase;
-  font-family: Bebas-Neue-Bold;
-  color: #414142;
-  font-size: 2.3rem;
   margin: 0 0 3.3vw;
 }
 
+.paragraph-title {
+  text-transform: uppercase;
+  font-family: "Bebas-Neue-Bold";
+  color: #414142;
+  font-size: 2.3rem;
+  margin: 0;
+}
 
-.paragraph-title:after{
-  display: inline-flex;
+.divider {
+  display: flex;
   flex: 1;
-  background:#949698;
   content: "";
-  margin-left: 3.3vw;
-  height: 3px;
+  background:#949698;
+  min-height: 3px;
+  max-height: 3px;
+  margin: 2vw 0;
 }
 
 .timeline {
@@ -222,10 +250,9 @@ html, body{
   margin-bottom: 2.4vw;
 }
 
-.record-info{
-  min-width: 17.6vw;
-  box-sizing: border-box;
-  padding-right: 4vw;
+.timeline-column {
+  min-width:14.7vw;
+  margin-right: 4vw;
   text-align: right;
 }
 
@@ -235,6 +262,7 @@ html, body{
   font-family: "Bebas-Neue-Bold";
   text-transform: uppercase;
   margin: 0;
+  white-space: pre-wrap;
 }
 
 .record-period{
@@ -309,6 +337,46 @@ html, body{
   height: 1.5vw;
   border-radius: 0.75vw;
   background: black;
+}
+
+.education{
+  background: #e4e2e3;
+}
+
+.hobbies{
+  width: 61%;
+  background: white;
+}
+
+.list-hobbies{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.hobby{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #414042;
+}
+
+.icon-hobby{
+  font-size: 1.8rem;
+  margin-bottom: 2vw;
+}
+
+.hobby-name{
+  font-size: 1rem;
+  font-family: "Montserrat-SemiBold";
+}
+
+.language{
+  width: 39%;
+  background:#f0efef;
 }
 
 @media screen and (min-width: 980px) {
