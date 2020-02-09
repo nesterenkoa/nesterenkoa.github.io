@@ -207,29 +207,29 @@ html, body{
   height: 3px;
 }
 
-.jobs{
+.timeline {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-.job {
+.record {
   display: flex;
   flex-direction: row;
 }
 
-.job:not(:last-of-type) {
+.record:not(:last-of-type) {
   margin-bottom: 2.4vw;
 }
 
-.job-info{
+.record-info{
   min-width: 17.6vw;
   box-sizing: border-box;
   padding-right: 4vw;
   text-align: right;
 }
 
-.job-position{
+.record-position{
   color: #128fc1;
   font-size: 1.6rem;
   font-family: "Bebas-Neue-Bold";
@@ -237,23 +237,23 @@ html, body{
   margin: 0;
 }
 
-.job-period{
+.record-period{
   font-size: 1rem;
   font-family: "Montserrat-Regular";
   color: #808285;
 }
 
-.job-details {
+.record-details {
   display: inline-block;
 }
 
-.job-title {
+.record-title {
   margin: 0 0 1rem 0;
   color: #414142;
   font-family: "Montserrat-SemiBold";
 }
 
-.job-description{
+.record-description{
   font-size: 1rem;
   font-family: "Montserrat-Regular";
   margin: 0;
