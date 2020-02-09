@@ -29,24 +29,40 @@
   src: url("../fonts/Montserrat-Regular.ttf");
 }
 
+@font-face {
+  font-family: "Montserrat-SemiBold";
+  src: url("../fonts/Montserrat-SemiBold.ttf");
+}
+
 html, body{
   font-size: 12px;
 }
 
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
 
 .header{
   background: black;
 }
 
-.container{
+.container {
   width: 92%;
   margin: 0 auto;
 }
 
 .general{
   display: flex;
-  padding-top: 4.5%;
+  position: relative;
+  padding: 4.3vw 0;
 }
+
 
 .profile{
   width: 52%;
@@ -62,13 +78,13 @@ html, body{
   bottom: 0;
   right: 0;
   width: 3px;
-  background: #4a4e5a;
+  background: #949698;
 }
 
 .avatar {
   width: 43%;
   border-radius: 50%;
-  margin-right: 6.5%;
+  margin-right: 3.3vw;
 }
 
 .text{
@@ -76,7 +92,7 @@ html, body{
   flex-direction: column;
   justify-content: center;
   text-transform: uppercase;
-  margin-right: 6.5%;
+  margin-right: 3.3vw;
 }
 
 .name{
@@ -102,7 +118,7 @@ html, body{
   width: 48%;
   display: flex;
   flex-direction: column;
-  padding-left: 6.5%;
+  padding-left: 3vw;
   box-sizing: border-box;
 }
 
@@ -111,8 +127,8 @@ html, body{
   flex: 1;
   flex-direction: column;
   justify-content: space-between;
-  padding-bottom: 5%;
 }
+
 .contact{
   display: block;
   text-decoration: none;
@@ -131,6 +147,13 @@ html, body{
   color: #a2a2a2;
 }
 
+.divider{
+  display: inline-flex;
+  height: 3px;
+  margin: 2vw 0;
+  background: #949698;
+}
+
 .about {
   display: flex;
   flex-direction: column;
@@ -141,12 +164,151 @@ html, body{
 .about-title {
   font-size: 2.3rem;
   font-family: "Bebas-Neue-Bold";
-  margin: 0;
+  margin: 0 0 2vw 0;
 }
 
 .about-description {
   font-size: 1rem;
   font-family: "Montserrat-Regular";
+  margin: 0;
+  line-height: 1.5rem;
+}
+
+.paragraph {
+  box-sizing: border-box;
+  padding: 5vw 4vw 4.5vw;
+}
+
+.info-experience{
+  display: flex;
+}
+
+.experience{
+  width: 61%;
+}
+
+.paragraph-title {
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  font-family: Bebas-Neue-Bold;
+  color: #414142;
+  font-size: 2.3rem;
+  margin: 0 0 3.3vw;
+}
+
+
+.paragraph-title:after{
+  display: inline-flex;
+  flex: 1;
+  background:#949698;
+  content: "";
+  margin-left: 3.3vw;
+  height: 3px;
+}
+
+.jobs{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.job {
+  display: flex;
+  flex-direction: row;
+}
+
+.job:not(:last-of-type) {
+  margin-bottom: 2.4vw;
+}
+
+.job-info{
+  min-width: 17.6vw;
+  box-sizing: border-box;
+  padding-right: 4vw;
+  text-align: right;
+}
+
+.job-position{
+  color: #128fc1;
+  font-size: 1.6rem;
+  font-family: "Bebas-Neue-Bold";
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.job-period{
+  font-size: 1rem;
+  font-family: "Montserrat-Regular";
+  color: #808285;
+}
+
+.job-details {
+  display: inline-block;
+}
+
+.job-title {
+  margin: 0 0 1rem 0;
+  color: #414142;
+  font-family: "Montserrat-SemiBold";
+}
+
+.job-description{
+  font-size: 1rem;
+  font-family: "Montserrat-Regular";
+  margin: 0;
+  line-height: 1.5rem;
+  color: #808285;
+}
+
+.knowledge {
+  width: 39%;
+}
+
+.pro-skills {
+  background: #6fd0f6;
+}
+
+.per-skills {
+  background: #eddc45;
+}
+
+.skills{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.skill {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.skill:not(:last-of-type) {
+  margin-bottom: 1.3vw;
+}
+
+.skill-name {
+  width: 36%;
+  padding-right: 1.8vw;
+  box-sizing: border-box;
+  margin: 0;
+  font-family: "Montserrat-SemiBold";
+  text-align: right;
+}
+
+.progress-bar {
+  border: 3px solid black;
+  border-radius: 0.75vw;
+  width: 57%;
+}
+
+.progress {
+  width: 50%;
+  height: 1.5vw;
+  border-radius: 0.75vw;
+  background: black;
 }
 
 @media screen and (min-width: 980px) {
