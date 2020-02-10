@@ -253,7 +253,7 @@ html, body{
 }
 
 .timeline-column {
-  min-width:14.7vw;
+  min-width:15.7vw;
   margin-right: 4vw;
   text-align: right;
 }
@@ -278,7 +278,7 @@ html, body{
 }
 
 .record-title {
-  margin: 0 0 1rem 0;
+  margin: 0 0 1.4vw 0;
   color: #414142;
   font-family: "Montserrat-SemiBold";
 }
@@ -316,7 +316,7 @@ html, body{
 }
 
 .skill:not(:last-of-type) {
-  margin-bottom: 1.3vw;
+  margin-bottom: 1.9vw;
 }
 
 .skill-name {
@@ -381,7 +381,109 @@ html, body{
   background:#f0efef;
 }
 
-@media screen and (min-width: 980px) {
+@media screen  and (max-width: 850px) {
+  .surname{
+    font-size: 3rem;
+  }
+
+  .experience{
+    width: 70%;
+  }
+  .skill-name{
+    width: 40%;
+  }
+
+  .timeline-column {
+    min-width: 17.7vw;
+  }
+
+  .skill:not(:last-of-type) {
+    margin-bottom: 2.5vw;
+}
+}
+
+
+@media screen  and (max-width: 780px){
+  .surname{
+    font-size: 2.5rem;
+  }
+
+  .row{
+    flex-wrap: wrap;
+  }
+
+  .experience{
+  width: 100%;
+}
+
+  .knowledge{
+    width: 100%;
+    display: flex;
+  }
+
+  .pro-skills,
+  .per-skills {
+    width: 50%;
+  }
+
+  .list-hobbies{
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 90%;
+    min-height: 20vw;
+    align-items: center;
+  }
+
+  .hobby{
+    width: 15vw;
+  }
+}
+
+@media screen  and (max-width: 620px){
+.general{
+  flex-direction: column;
+}
+  .profile{
+    width: 90%;
+  }
+
+  .avatar{
+    max-width: 35vw;
+    margin:0  8.3vw 8.3vw 0;
+  }
+
+  .info{
+    width: 98%;
+    flex-direction: row;
+  }
+
+  .contacts{
+    width: 45vw;
+    justify-content: start;
+  }
+
+  .info .divider{
+    display: none;
+}
+
+  /*.list-social-icons{*/
+    /*flex-wrap: wrap;*/
+    /*width: 90%;*/
+    /*min-height:15vw ;*/
+    /*align-items: center;*/
+  /*}*/
+
+  /*.list-social-icons li{*/
+    /*width:20vw ;*/
+    /*margin-right: 0;*/
+  /*}*/
+
+  /*.list-social-icons li:last-of-type{*/
+    /*align-self: flex-end;*/
+  /*}*/
+}
+
+  @media screen and (min-width: 980px) {
   html, body {
     font-size: 13px;
   }
