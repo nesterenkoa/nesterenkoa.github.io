@@ -50,7 +50,7 @@ html, body{
 
 .header{
   background: black;
-  padding-bottom: 3.8vw;
+  padding-bottom: 2vw;
 }
 
 .container {
@@ -61,26 +61,17 @@ html, body{
 .general{
   display: flex;
   position: relative;
-  padding: 4.3vw 0 0;
+  padding: 4.3vw 0 2vw 0;
+  border-bottom: 3px solid #949698;
+  margin-bottom: 2vw;
 }
-
 
 .profile{
   width: 52%;
   display: flex;
   align-items: center;
   position: relative;
-}
-
-.profile:after {
-  display: block;
-  content: '';
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  width: 3px;
-  background: #949698;
+  border-right: 3px solid #949698;
 }
 
 .avatar {
@@ -129,6 +120,7 @@ html, body{
   flex: 1;
   flex-direction: column;
   justify-content: space-between;
+  margin-bottom: 2vw;
 }
 
 .contact{
@@ -136,6 +128,10 @@ html, body{
   text-decoration: none;
   font-size: 1rem;
   margin-bottom: 2vw;
+}
+
+.contact:last-child{
+  margin-bottom: 0;
 }
 
 .contact-label {
@@ -155,6 +151,8 @@ html, body{
   flex-direction: column;
   flex: 1;
   color: #a2a2a2;
+  border-top: 3px solid #949698;
+  padding-top: 2vw;
 }
 
 .about-title {
@@ -184,8 +182,14 @@ html, body{
   margin: 0;
 }
 
-.list-social-icons li:not(:last-of-type){
+/*.list-social-icons li:not(:last-of-type){*/
+
+.list-social-icons li{
   margin-right: 5vw;
+}
+
+.list-social-icons li:last-child {
+  margin-right: 0;
 }
 
 .link-social-icon{
@@ -273,10 +277,6 @@ html, body{
   color: #808285;
 }
 
-.record-details {
-  display: inline-block;
-}
-
 .record-title {
   margin: 0 0 1.4vw 0;
   color: #414142;
@@ -332,13 +332,14 @@ html, body{
   border: 3px solid black;
   border-radius: 0.75vw;
   width: 57%;
+  overflow: hidden;
 }
 
 .progress {
   width: 50%;
   height: 1.5vw;
-  border-radius: 0.75vw;
   background: black;
+  border-radius: 0 .75vw 0.75vw 0;
 }
 
 .education{
@@ -363,6 +364,7 @@ html, body{
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
   color: #414042;
 }
 
@@ -419,6 +421,7 @@ html, body{
   .knowledge{
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
   }
 
   .pro-skills,
@@ -440,11 +443,16 @@ html, body{
 }
 
 @media screen  and (max-width: 620px){
+
+  html, body {
+    font-size: 12px;
+  }
+
 .general{
   flex-direction: column;
 }
   .profile{
-    width: 90%;
+    width: 97%;
   }
 
   .avatar{
@@ -462,27 +470,65 @@ html, body{
     justify-content: start;
   }
 
-  .info .divider{
+  .info{
+    flex-direction: column;
+  }
+
+  .contacts,
+  .about{
+    margin-bottom: 5vw;
+    border: none;
+  }
+
+  .list-social-icons{
+    justify-content: space-around;
+  }
+
+  .link-social-icon span{
     display: none;
+  }
+
+  .link-social-icon i{
+    font-size: 3rem;
+  }
+
+  .record-position{
+    white-space: normal;
+  }
 }
 
-  /*.list-social-icons{*/
-    /*flex-wrap: wrap;*/
-    /*width: 90%;*/
-    /*min-height:15vw ;*/
-    /*align-items: center;*/
-  /*}*/
-
-  /*.list-social-icons li{*/
-    /*width:20vw ;*/
-    /*margin-right: 0;*/
-  /*}*/
-
-  /*.list-social-icons li:last-of-type{*/
-    /*align-self: flex-end;*/
-  /*}*/
+@media screen  and (max-width: 510px) {
+.timeline-column{
+  min-width: 23.7vw;
+  margin-right: 6vw;
 }
 
+  .record:not(:last-of-type) {
+    margin-bottom: 6vw;
+  }
+
+  .per-skills,
+  .pro-skills{
+    width: 100%;
+  }
+
+  .hobbies{
+    width: 100%;
+  }
+
+  .list-hobbies{
+    padding-left:7vw;
+    min-height: 35vw;
+  }
+
+  .hobby{
+    width: 25vw;
+  }
+
+  .language{
+    width: 100%;
+  }
+}
   @media screen and (min-width: 980px) {
   html, body {
     font-size: 13px;
