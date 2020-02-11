@@ -1,12 +1,14 @@
 
 @font-face {
-  font-family: "KelsonSans-Light";
+  font-family: "KelsonSans";
  src: url("../fonts/Kelson/KelsonSans-Light.woff2");
+  font-weight: 400;
 }
 
 @font-face {
-  font-family: "KelsonSans-Bold";
+  font-family: "KelsonSans";
   src: url("../fonts/Kelson/KelsonSans-Bold.woff2");
+  font-weight: 600;
 }
 
 @font-face {
@@ -15,27 +17,33 @@
 }
 
 @font-face {
-  font-family: "Bebas-Neue-Bold";
+  font-family: "Bebas-Neue";
   src: url("../fonts/Bebas-Neue-Bold.ttf");
+  font-weight: 600;
 }
 
 @font-face {
-  font-family: "Montserrat-Bold";
+  font-family: "Montserrat";
   src: url("../fonts/Montserrat-Bold.ttf");
+  font-weight: 700;
 }
 
 @font-face {
-  font-family: "Montserrat-Regular";
+  font-family: "Montserrat";
   src: url("../fonts/Montserrat-Regular.ttf");
+  font-weight: 400;
 }
 
 @font-face {
-  font-family: "Montserrat-SemiBold";
+  font-family: "Montserrat";
   src: url("../fonts/Montserrat-SemiBold.ttf");
+  font-weight: 600;
 }
 
 html, body{
   font-size: 12px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
 }
 
 .row {
@@ -62,7 +70,7 @@ html, body{
   display: flex;
   position: relative;
   padding: 4.3vw 0 2vw 0;
-  border-bottom: 3px solid #949698;
+  border-bottom: 0.2vw solid #949698;
   margin-bottom: 2vw;
 }
 
@@ -71,7 +79,7 @@ html, body{
   display: flex;
   align-items: center;
   position: relative;
-  border-right: 3px solid #949698;
+  border-right: 0.2vw solid #949698;
 }
 
 .avatar {
@@ -89,14 +97,16 @@ html, body{
 }
 
 .name{
-  font-family: "KelsonSans-Light", sans-serif;
+  font-family: "KelsonSans", sans-serif;
+  font-weight: 400;
   color: white;
   font-size: 3.5rem;
   margin: 0;
 }
 
 .surname{
-  font-family: "KelsonSans-Bold", sans-serif;
+  font-family: "KelsonSans", sans-serif;
+  font-weight: 600;
   color: #d07628;
   font-size: 3.5rem;
   margin: 0;
@@ -137,12 +147,14 @@ html, body{
 .contact-label {
   display: inline-block;
   width: 21%;
-  font-family: "Montserrat-Bold";
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
   color: #a2a2a2;
 }
 
 .contact-value{
-  font-family: "Montserrat-Regular";
+  /*font-family: "Montserrat", sans-serif;*/
+  /*font-weight: 400;*/
   color: #a2a2a2;
 }
 
@@ -151,19 +163,21 @@ html, body{
   flex-direction: column;
   flex: 1;
   color: #a2a2a2;
-  border-top: 3px solid #949698;
+  border-top: 0.2vw solid #949698;
   padding-top: 2vw;
 }
 
 .about-title {
   font-size: 2.3rem;
-  font-family: "Bebas-Neue-Bold";
+  font-family: "Bebas-Neue",sans-serif;
+  font-weight: 600;
   margin: 0 0 2vw 0;
 }
 
 .about-description {
   font-size: 1rem;
-  font-family: "Montserrat-Regular";
+  /*font-family: "Montserrat",sans-serif;*/
+  /*font-weight: 400;*/
   margin: 0;
   line-height: 1.5rem;
 }
@@ -225,7 +239,8 @@ html, body{
 
 .paragraph-title {
   text-transform: uppercase;
-  font-family: "Bebas-Neue-Bold";
+  font-family: "Bebas-Neue",sans-serif;
+  font-weight: 600;
   color: #414142;
   font-size: 2.3rem;
   margin: 0;
@@ -236,8 +251,7 @@ html, body{
   flex: 1;
   content: "";
   background:#949698;
-  min-height: 3px;
-  max-height: 3px;
+  height: 0.2vw;
   margin: 2vw 0;
 }
 
@@ -265,7 +279,8 @@ html, body{
 .record-position{
   color: #128fc1;
   font-size: 1.6rem;
-  font-family: "Bebas-Neue-Bold";
+  font-family: "Bebas-Neue", sans-serif;
+  font-weight: 600;
   text-transform: uppercase;
   margin: 0;
   white-space: pre-wrap;
@@ -273,19 +288,20 @@ html, body{
 
 .record-period{
   font-size: 1rem;
-  font-family: "Montserrat-Regular";
+  /*font-family: "Montserrat-Regular";*/
   color: #808285;
 }
 
 .record-title {
   margin: 0 0 1.4vw 0;
   color: #414142;
-  font-family: "Montserrat-SemiBold";
+  font-family: "Montserrat",sans-serif;
+  font-weight: 600;
 }
 
 .record-description{
   font-size: 1rem;
-  font-family: "Montserrat-Regular";
+  /*font-family: "Montserrat-Regular";*/
   margin: 0;
   line-height: 1.5rem;
   color: #808285;
@@ -324,22 +340,28 @@ html, body{
   padding-right: 1.8vw;
   box-sizing: border-box;
   margin: 0;
-  font-family: "Montserrat-SemiBold";
+  font-family: "Montserrat",sans-serif;
+  font-weight: 600;
   text-align: right;
 }
 
 .progress-bar {
-  border: 3px solid black;
+  position: relative;
+  border: 0.1vw solid #303135;
   border-radius: 0.75vw;
   width: 57%;
-  overflow: hidden;
+  height: 1.5vw;
+  box-sizing: border-box;
 }
 
 .progress {
+  position: absolute;
   width: 50%;
-  height: 1.5vw;
+  left: -0.1vw;
+  bottom: -0.1vw;
+  height: 1.51vw;
   background: black;
-  border-radius: 0 .75vw 0.75vw 0;
+  border-radius: 0.85vw;
 }
 
 .education{
@@ -375,7 +397,8 @@ html, body{
 
 .hobby-name{
   font-size: 1rem;
-  font-family: "Montserrat-SemiBold";
+  font-family: "Montserrat",sans-serif;
+  font-weight: 600;
 }
 
 .language{
@@ -414,6 +437,18 @@ html, body{
     flex-wrap: wrap;
   }
 
+  .list-social-icons{
+    justify-content: space-around;
+  }
+
+  .link-social-icon span{
+    display: none;
+  }
+
+  .link-social-icon i{
+    font-size: 3rem;
+  }
+
   .experience{
   width: 100%;
 }
@@ -442,58 +477,59 @@ html, body{
   }
 }
 
-@media screen  and (max-width: 620px){
+@media screen  and (max-width: 620px) {
 
   html, body {
     font-size: 12px;
   }
 
-.general{
-  flex-direction: column;
-}
-  .profile{
+  .general {
+    flex-direction: column;
+  }
+
+  .profile {
     width: 97%;
   }
 
-  .avatar{
+  .avatar {
     max-width: 35vw;
-    margin:0  8.3vw 8.3vw 0;
+    margin: 0 8.3vw 8.3vw 0;
   }
 
-  .info{
+  .info {
     width: 98%;
     flex-direction: row;
   }
 
-  .contacts{
-    width: 45vw;
+  .contacts {
+    /*width: 45vw;*/
     justify-content: start;
   }
 
-  .info{
+  .info {
     flex-direction: column;
   }
 
-  .contacts,
-  .about{
+  .contacts {
     margin-bottom: 5vw;
     border: none;
   }
 
-  .list-social-icons{
-    justify-content: space-around;
+  .about {
+    border: none;
   }
 
-  .link-social-icon span{
-    display: none;
+  .about-description,
+  .record-description {
+    line-height: 2rem;
   }
 
-  .link-social-icon i{
-    font-size: 3rem;
-  }
-
-  .record-position{
+  .record-position {
     white-space: normal;
+  }
+
+  .record:not(:last-of-type) {
+    margin-bottom: 6vw;
   }
 }
 
@@ -529,6 +565,7 @@ html, body{
     width: 100%;
   }
 }
+
   @media screen and (min-width: 980px) {
   html, body {
     font-size: 13px;
@@ -558,3 +595,4 @@ html, body{
     font-size: 33px;
   }
 }
+
