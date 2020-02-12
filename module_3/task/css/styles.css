@@ -312,10 +312,12 @@ html, body{
 }
 
 .pro-skills {
+  min-height: 50%;
   background: #6fd0f6;
 }
 
 .per-skills {
+  min-height: 50%;
   background: #eddc45;
 }
 
