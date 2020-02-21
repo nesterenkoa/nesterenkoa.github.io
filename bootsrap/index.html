@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Title</title>
+  <link rel="stylesheet" href="bootstrap%204.0/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="fontawesome-free/css/all.css">
+</head>
+<body>
+<header>
+  <nav class="navbar navbar-margin navbar-light">
+    <a class="navbar-brand" href="#">Dashboard</a>
+  </nav>
+</header>
+
+<main class="container-fluid">
+  <div class="row">
+    <div class="col-sm-6 col-lg-3">
+      <div class="card card-decor">
+
+        <div class="card-body">
+          <div class="card-icon bg-orange">
+            <i class="far fa-clone"></i>
+          </div>
+
+          <div class="card-info d-flex flex-column align-items-end">
+            <p class="card-category">Used Space</p>
+            <span class="category-values">49/50gb</span>
+          </div>
+        </div>
+
+        <div class="card-footer text-style">
+          <i class="fas fa-exclamation-triangle "></i>
+          <span class="color-purple">Get More Space...</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-sm-6 col-lg-3">
+      <div class="card card-decor">
+
+        <div class="card-body">
+          <div class="card-icon bg-green">
+            <i class="fas fa-store-alt"></i>
+          </div>
+
+          <div class="card-info d-flex flex-column align-items-end">
+            <p class="card-category">Revenue</p>
+
+            <span class="category-values">$34,245</span>
+          </div>
+        </div>
+
+        <div class="card-footer text-style">
+          <i class="far fa-calendar-alt"></i>
+          <span> Last 24 Hours</span>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="col-sm-6 col-lg-3">
+      <div class="card card-decor">
+
+        <div class="card-body">
+          <div class="card-icon bg-fuchsia">
+            <i class="fas fa-info-circle"></i>
+          </div>
+
+          <div class="card-info d-flex flex-column align-items-end">
+            <p class="card-category">Fixed Issues</p>
+
+            <span class="category-values">75</span>
+          </div>
+        </div>
+
+        <div class="card-footer text-style ">
+          <i class="fas fa-tag"></i>
+          <span>Tracked from Github</span>
+        </div>
+      </div>
+    </div>
+
+    <div class=" col-sm-6 col-lg-3">
+      <div class="card card-decor">
+
+        <div class="card-body">
+          <div class="card-icon bg-blue">
+            <i class="fab fa-twitter"></i>
+          </div>
+
+          <div class="card-info d-flex flex-column align-items-end">
+            <p class="card-category">Followers</p>
+            <span class="category-values">+250</span>
+          </div>
+        </div>
+
+        <div class="card-footer text-style">
+          <i class="fas fa-history"></i>
+          <span>Just Updated</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-4">
+      <div class="card card-decor">
+        <img src="img/img1.jpg" class="card-img" alt="diagram">
+        <div class="card-body">
+          <h5 class="card-heading">Daily Sales</h5>
+
+          <div class="card-text">
+            <span><i class="fas fa-long-arrow-alt-up">55%</i>increase in today sales.</span>
+          </div>
+        </div>
+
+        <div class="card-footer ">
+          <span class="card-text"><i class="far fa-clock"></i> updated 4 minutes ago</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card card-decor">
+        <img src="img/laundrytime.jpg" class="card-img" alt="email">
+        <div class="card-body">
+          <h5 class="card-heading">Email Subscriptions</h5>
+          <p class="card-text">Last Campaign Performance</p>
+        </div>
+
+        <div class="card-footer">
+          <span class="card-text"><i class="far fa-clock"></i> updated 4 minutes ago</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card card-decor">
+        <img src="img/img2.jpg" class="card-img" alt="email">
+        <div class="card-body">
+          <h5 class="card-heading">Completed Tasks</h5>
+          <p class="card-text">Last Campaign Performance</p>
+        </div>
+
+        <div class="card-footer">
+          <span class="card-text"><i class="far fa-clock"></i> updated 4 minutes ago</span>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="row">
+      <div class="col-lg-6 col-md-12">
+        <div class="card card-decor">
+          <div class="card-header decor-card-header bg-purple">
+            <div class="card-header-wrapper d-flex align-items-center">
+              <span>Tasks:</span>
+              <ul class="nav nav-tabs">
+                <li class="nav-item">
+                  <a class="nav-link active link-style" data-toggle="tab" href="#bugs"> <i
+                      class="fas fa-bug"></i>Bugs</a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link link-style" data-toggle="tab" href="#website"><i
+                      class="fas fa-code"></i>Website</a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link link-style" data-toggle="tab" href="#server"><i class="fas fa-cloud"></i>Server</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="card-body">
+            <div class="tab-content">
+              <div class="tab-pane fade show active" id="bugs">
+
+                <div class="form-check line-style d-flex justify-content-between">
+                  <input class="form-check-input check" type="checkbox" value="" id="defaultCheck1">
+                  <label class="form-check-label" for="defaultCheck1">
+                    <p class="text-lebel">
+                      Sign contract for "What are conference organizers afraid of?
+                    </p>
+                  </label>
+
+                  <div class="wrapper-icon">
+                    <i class="fas fa-pen"></i>
+                    <i class="fas fa-times"></i>
+                  </div>
+                </div>
+
+
+                <div class="form-check line-style d-flex justify-content-between">
+                  <input class="form-check-input check" type="checkbox" value="" id="defaultCheck2">
+                  <label class="form-check-label" for="defaultCheck2">
+                  <span class="text-lebel">
+                    Lines From Great Russian Literature? Or E-mails From My Boss?
+                  </span>
+                  </label>
+
+                  <div class="wrapper-icon">
+                    <i class="fas fa-pen"></i>
+                    <i class="fas fa-times"></i>
+                  </div>
+                </div>
+
+                <div class="form-check line-style d-flex justify-content-between">
+                  <input class="form-check-input check" type="checkbox" value="" id="defaultCheck3">
+                  <label class="form-check-label" for="defaultCheck3">
+                    <p class="text-lebel">
+                      Flooded: One year later, assessing what was lost and what was found when a ravaging rain swept
+                      through metro Detroit
+                    </p>
+                  </label>
+
+                  <div class="wrapper-icon">
+                    <i class="fas fa-pen"></i>
+                    <i class="fas fa-times"></i>
+                  </div>
+                </div>
+
+                <div class="form-check line-style d-flex justify-content-between">
+                  <input class="form-check-input check" type="checkbox" value="" id="defaultCheck4">
+                  <label class="form-check-label" for="defaultCheck4">
+                    <p class="text-lebel">
+                      Create 4 Invisible User Experiences you Never Knew About
+                    </p>
+                  </label>
+
+                  <div class="wrapper-icon">
+                    <i class="fas fa-pen"></i>
+                    <i class="fas fa-times"></i>
+                  </div>
+                </div>
+              </div>
+
+              <div class="tab-pane fade" id="website">
+                <div class="form-check d-flex justify-content-between">
+                  <input class="form-check-input check" type="checkbox" value="" id="defaultCheck1">
+                  <label class="form-check-label" for="defaultCheck1">
+                    <p class="text-lebel">
+                      Flooded: One year later, assessing what was lost and what was found when a ravaging rain swept
+                      through metro Detroit
+                    </p>
+                  </label>
+
+                  <div class="wrapper-icon">
+                    <i class="fas fa-pen"></i>
+                    <i class="fas fa-times"></i>
+                  </div>
+                </div>
+
+
+                <div class="form-check d-flex justify-content-between">
+                  <input class="form-check-input check" type="checkbox" value="" id="defaultCheck1">
+                  <label class="form-check-label" for="defaultCheck1">
+                    <p class="text-lebel">
+                      Sign contract for "What are conference organizers afraid of?"
+                    </p>
+                  </label>
+
+                  <div class="wrapper-icon">
+                    <i class="fas fa-pen"></i>
+                    <i class="fas fa-times"></i>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="tab-pane fade" id="server">
+                <div class="form-check d-flex justify-content-between">
+                  <input class="form-check-input check" type="checkbox" value="" id="defaultCheck1">
+                  <label class="form-check-label" for="defaultCheck1">
+                    <p class="text-lebel">
+                      Lines From Great Russian Literature? Or E-mails From My Boss? </p>
+                  </label>
+
+                  <div class="wrapper-icon">
+                    <i class="fas fa-pen"></i>
+                    <i class="fas fa-times"></i>
+                  </div>
+                </div>
+
+                <div class="form-check d-flex justify-content-between">
+                  <input class="form-check-input check" type="checkbox" value="" id="defaultCheck1">
+                  <label class="form-check-label" for="defaultCheck1">
+                    <p class="text-lebel">
+                      Flooded: One year later, assessing what was lost and what was found when a ravaging rain swept
+                      through metro Detroit
+                    </p>
+                  </label>
+
+                  <div class="wrapper-icon">
+                    <i class="fas fa-pen"></i>
+                    <i class="fas fa-times"></i>
+                  </div>
+                </div>
+
+                <div class="form-check d-flex justify-content-between">
+                  <input class="form-check-input check" type="checkbox" value="" id="defaultCheck1">
+                  <label class="form-check-label" for="defaultCheck1">
+                    <p class="text-lebel">
+                      Sign contract for "What are conference organizers afraid of?"
+                    </p>
+                  </label>
+
+                  <div class="wrapper-icon">
+                    <i class="fas fa-pen"></i>
+                    <i class="fas fa-times"></i>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+        <div class="col-lg-6 col-md-12">
+          <div class="card card-decor">
+            <div class="card-header decor-card-header bg-orange">
+              <h4 class="card-heading">Employees Stats</h4>
+              <p class="sub-text">New employees on 15th September, 2016</p>
+            </div>
+
+            <div class="card-body">
+              <table class="table">
+                <thead class="table-style">
+                <tr>
+                  <th scope="col">ID</th>
+                  <th scope="col">Name</th>
+                  <th scope="col">Salary</th>
+                  <th scope="col">Country</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                  <th scope="row">1</th>
+                  <td>Dakota Rice</td>
+                  <td>$36,738</td>
+                  <td>Niger</td>
+                </tr>
+
+                <tr>
+                  <th scope="row">2</th>
+                  <td>Minerva Hooper</td>
+                  <td>$23,789</td>
+                  <td>Curacao</td>
+                </tr>
+
+
+                <tr>
+                  <th scope="row">3</th>
+                  <td>Sage Rodriguez</td>
+                  <td>$56,142</td>
+                  <td>Netherlands</td>
+                </tr>
+
+                <tr>
+                  <th scope="row">4</th>
+                  <td>Philip Chaney</td>
+                  <td>$38,735</td>
+                  <td>Korea South</td>
+                </tr>
+                </tbody>
+              </table>
+
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+
+</main>
+<script src="bootstrap%204.0/jquery-3.4.1.slim.min.js"></script>
+<script src="bootstrap%204.0/bootstrap.min.js"></script>
+</body>
+</html>
