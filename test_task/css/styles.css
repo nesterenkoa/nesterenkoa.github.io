@@ -135,10 +135,8 @@
 
 .slideshow-wrap {
   display: block;
-  height: 320px;
+  height: 620px;
   min-width: 260px;
-  max-width: 640px;
-  margin: auto;
   padding: 2%;
   border:1px solid gray;
   margin-top: 20px;
@@ -167,7 +165,6 @@
 
 .slideshow-inner>.list-slide>.slide {
   width: 20%;
-  height: 320px;
   float: left;
   position: relative;
   text-align: center;
@@ -283,11 +280,15 @@ input[type=radio]#button-4:checked~.arrows#arrow-3 { left: 8px }
 .mobile .img-description-product {
   width: 45%;
   object-fit: contain;
+  order: 1;
+  margin: 0;
 }
 
 .mobile .text{
   width: 45%;
   padding-top: 50px;
+  order: 1;
+  margin: 0;
 }
 
 .mobile .logo{
