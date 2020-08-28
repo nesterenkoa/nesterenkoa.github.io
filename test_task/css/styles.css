@@ -252,7 +252,8 @@ input[type=radio]#button-4:checked~.arrows#arrow-3 { left: 8px }
 
 
 .footer-bgr{
-  background: url("../img/backgr.png");
+  background: url("../img/backgr.png") no-repeat;
+  background-size: cover;
   width: 100%;
   height: 80px;
 }
