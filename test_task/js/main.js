@@ -11,19 +11,19 @@ const resizeObserver = new ResizeObserver((entries) => {
       'small-pc',
     );
     
-    if (width > 768) {
+    if (width < 768) {
       element.classList.add('mobile');
     }
-    if (width > 992) {
-      // element.classList.remove('mobile');
+    if (width >= 768) {
+      element.classList.remove('mobile');
       element.classList.add('tablet');
     }
-    if (width > 1100) {
-    //   element.classList.remove('tablet');
+    if (width >= 992) {
+      // element.classList.remove('tablet');
       element.classList.add('small-pc');
     }
   })
 });
 
-const container = document.querySelector('.root');
+const container = document.querySelector('.tt-root');
 resizeObserver.observe(container);
