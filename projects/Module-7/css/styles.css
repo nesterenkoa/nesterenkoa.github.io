@@ -1,0 +1,271 @@
+@font-face {
+  font-family: 'Wisdom-Script';
+  src: url(../fonts/Wisdom-Script.ttf);
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url(../fonts/Montserrat-Regular.ttf);
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url(../fonts/Montserrat-Medium.ttf);
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url(../fonts/Montserrat-SemiBold.ttf);
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url(../fonts/Montserrat-Bold.ttf);
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'Droid Serif Italic';
+  src: url(../fonts/DroidSerif-Italic.ttf);
+}
+
+@font-face {
+  font-family: 'Roboto Slab';
+  src: url(../fonts/RobotoSlab-Regular.ttf);
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Roboto Slab';
+  src: url(../fonts/RobotoSlab-Light.ttf);
+  font-weight: 300;
+}
+
+body {
+  margin: 0;
+}
+
+.container {
+  width: 940px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+nav {
+  padding: 40px 0 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-family: 'Wisdom-Script';
+  font-size: 26px;
+  color: #fed136;
+}
+
+.navigation {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  width: 484px;
+  padding: 0;
+  margin: 0;
+}
+
+.navigation a {
+  text-transform: uppercase;
+  font-family: 'Montserrat';
+  font-size: 14px;
+  color: #222222;
+  font-weight: 600;
+}
+
+.navigation a:focus,
+.navigation a:hover {
+  color: #fed136;
+}
+
+.section-services {
+  padding: 70px 0 120px;
+}
+
+.title-services {
+  margin: 0 0 8px;
+  text-align: center;
+  color: #222222;
+  font-family: 'Montserrat';
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 38px;
+  /* letter-spacing:-1px; */
+}
+
+.sub-title-services {
+  margin: 0 0 75px;
+  text-align: center;
+  font-family: 'Droid Serif Italic';
+  color: #777777;
+  font-size: 16px;
+  font-weight: 100;
+}
+
+.services {
+  margin: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0;
+}
+
+.service-item {
+  width: 284px;
+  text-align: center;
+  position: relative;
+  padding-top: 96px;
+}
+
+.service-item:before {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 74px;
+  height: 74px;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%);
+  background: no-repeat center;
+}
+
+.item-1:before {
+  background-image: url(../img/icon-basket.png);
+}
+
+.item-2:before {
+  background-image: url(../img/icon-laptop.png);
+}
+
+.item-3:before {
+  background-image: url(../img/icon-locked.png);
+}
+
+.service-item h4 {
+  display: block;
+  font-family: 'Montserrat';
+  font-size: 18px;
+  font-weight: bold;
+  color: #222222;
+  margin: 0 0 11px;
+  letter-spacing: -1px;
+}
+
+.main-text {
+  margin: 0;
+  font-family: 'Roboto Slab';
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 21px;
+  letter-spacing: 0.2px;
+  color: #777777;
+}
+
+.service-item img {
+  margin-bottom: 18px;
+}
+
+.section-contact-us {
+  background: #222222;
+  background-image: url(../img/maps-img-op.png);
+  background-repeat: no-repeat;
+  background-position: 109.5% 97%;
+  padding: 100px 0;
+}
+
+.title-contact {
+  color: #ffffff;
+  margin: 0 0 14px;
+  font-size: 39px;
+  letter-spacing: -0.3px;
+  font-weight: 600;
+}
+
+form * {
+  box-sizing: border-box;
+}
+
+.clearfix:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+form input::placeholder,
+textarea::placeholder {
+  text-transform: uppercase;
+  color: #bbbbbb;
+}
+
+.inputs-holder * {
+  border-radius: 4px;
+  border: transparent;
+  color: #bbbbbb;
+  font-size: 14px;
+  letter-spacing: -0.3px;
+  font-family: 'Montserrat';
+  font-weight: 500;
+  padding: 17px 20px;
+  width: 454px;
+}
+
+.inputs-holder *:required:valid:not(:placeholder-shown):not(:focus) {
+  outline: 2px solid greenyellow;
+}
+
+.inputs-holder *:required:invalid:not(:placeholder-shown):not(:focus) {
+  outline: 2px solid red;
+}
+
+.inputs-holder {
+  padding: 0;
+  border: 0;
+  margin: 0 0 28px;
+}
+
+.inputs-holder input {
+  margin-bottom: 29px;
+  float: left;
+}
+
+.inputs-holder input:last-child {
+  margin-bottom: 0;
+}
+
+form textarea {
+  height: 214px;
+  resize: none;
+  float: right;
+}
+
+.submit {
+  display: block;
+  width: 240px;
+  padding: 22px 0;
+  background: #fed136;
+  color: #ffffff;
+  border: none;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-family: 'Montserrat';
+  font-weight: 500;
+  border-radius: 4px;
+  margin: 0 auto;
+  cursor: pointer;
+}
