@@ -1,0 +1,148 @@
+ nuxt-link{
+  text-decoration: none;
+   cursor: pointer;
+}
+ h1,h2,h3,h4,h5,h6{
+   margin: 0;
+ }
+
+ p{
+   margin: 0;
+ }
+
+ ul{
+   list-style: none;
+   margin: 0;
+   padding: 0;
+ }
+ .heading{
+   text-align: center;
+   color: #862a5c;
+   font-size:26px;
+   margin-bottom: 10px;
+ }
+ .mp-info-heading{
+   font-size: 17px;
+   color: #862a5c;
+   text-align: center;
+ }
+ .wrapper-divider{
+ background-size: cover;
+ display: block;
+ width: 40px;
+ height:40px;
+ position: relative;
+ margin: 0 auto 25px;
+ }
+ .wrapper-divider:before{
+   position: absolute;
+   display: block;
+   content: '';
+   width: 112px;
+   height: 2px;
+   background: #74d4c0 ;
+   left: 100%;
+   bottom: 50%;
+   margin-left: 10px;
+ }
+ .wrapper-divider:after{
+   position: absolute;
+   display: block;
+   content: '';
+   width: 112px;
+   height: 2px;
+   background: #74d4c0;
+   right: 100%;
+   bottom: 50%;
+   margin-right: 10px;
+ }
+
+.mp-title {
+  color: #862a5c;
+}
+
+.mp-price {
+  padding: 10px;
+  margin: 0;
+  background: #eca0b6;
+  border-radius: 5px;
+  color: white;
+}
+
+.mp-description {
+  font-family: 'Montserrat';
+  font-size: 15px;
+  color: #007892;
+  /*min-height: 75px;*/
+}
+
+.mp-btn{
+  padding: 10px 15px;
+  align-self: flex-end;
+  border-radius: 5px;
+  border-color: transparent;
+}
+
+.mp-btn-order{
+  padding: 10px 15px;
+  background: #fafba4;
+  color: #862a5c;
+  /*align-self: flex-end;*/
+  border-radius: 5px;
+  border: transparent;
+}
+
+.mp-btn-order:hover{
+  background: #74d4c0;
+  color: white;
+}
+
+.mp-btn-remove{
+  color:#862a5c;
+  background: #fff0f5;
+  border: 1px solid #862a5c;
+}
+.mp-btn-remove:hover{
+  background: #862a5c;
+  color: white;
+}
+
+.mp-btn-checkout{
+  background:yellow ;
+  color: #74d4c0;
+  text-align: center;
+  text-decoration: none;
+}
+
+.mp-btn-checkout:hover{
+  color:yellow;
+  background: #74d4c0;
+  text-decoration: none;
+}
+
+.fa-cutlery{
+  margin-right: 5px;
+}
+
+ .mp-margin-bt {
+   margin-bottom: 10px;
+ }
+
+ @media (max-width: 767px) {
+   .mp-btn {
+     width: 100%
+   }
+ }
+ @media (min-width: 600px) {
+   .heading {
+     font-size: 35px;
+   }
+
+   .mp-info-heading {
+     font-size: 22px;
+   }
+
+   .mp-description {
+     font-size: 17px;
+   }
+ }

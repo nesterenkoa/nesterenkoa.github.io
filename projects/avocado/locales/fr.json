@@ -1,0 +1,11 @@
+{
+  "nav": {
+    "home": "accueil",
+    "products": "produits",
+    "delivery": "livraison",
+    "abous": "abous us",
+    "cart": "chariot",
+    "form": "forme",
+    "product-details": "détails du produit"
+  }
+}
