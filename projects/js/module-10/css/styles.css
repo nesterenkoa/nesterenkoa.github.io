@@ -1,0 +1,122 @@
+.container{
+  text-align: center;
+  margin: 40px 0;
+}
+
+.form {
+  margin-bottom: 20px;
+}
+
+.form input {
+  width: 100px;
+}
+
+.form > * {
+  height: 30px;
+  margin-right: 10px;
+  box-sizing: border-box;
+}
+
+.nameInput::placeholder{
+ color: red;
+}
+
+.ageInput::placeholder{
+  color:#7fd9c7 ;
+}
+
+.editable .user-info {
+  display: none;
+}
+
+.fa-address-book:before,
+.fa-paint-brush:before,
+.fa-trash:before,
+.fa-times:before,
+.fa-floppy-o:before{
+  margin-right:5px;
+}
+
+.list{
+  list-style: none;
+  width: 60%;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.list-item{
+  border: 1px solid  #8f8f8f;
+  border-radius: 5px;
+  background: #fbf9e4;
+  padding: 10px;
+  margin-bottom: 5px;
+}
+
+.user-info{
+  margin-right: 10px;
+  width: 40%;
+  display: inline-block;
+  overflow-wrap: break-word;
+}
+
+.btn {
+  font-size: 17px;
+  height: 40px;
+  border-radius: 20px;
+  padding: 0 20px;
+  color: white;
+  outline: none;
+}
+
+.btn * {
+  pointer-events: none;
+  outline: none;
+}
+
+.btn-create {
+  font-size: 15px;
+  background: #fed136;
+  border-color: #660099;
+  color:#660099;
+}
+
+.btn-create:hover{
+  background: #660099;
+  border-color: #fed136;
+  color: #fed136;
+}
+
+.btn-edit{
+  background: #4de24a;
+}
+
+.btn-edit:hover{
+  background: #660099;
+  color: #4de24a;
+}
+
+.btn-delete{
+  background: #d95348;
+}
+
+.btn-delete:hover{
+  background: #660099;
+  color: #cc0000;
+}
+
+.btn-cancel{
+  background: #d1751a;
+}
+
+.btn-cancel:hover{
+  background: #660099;
+  color: #d1751a;
+}
+.btn-save{
+  background: #1abc9c;
+}
+
+.btn-save:hover{
+  background: #660099;
+  color: #1abc9c;
+}

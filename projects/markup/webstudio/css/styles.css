@@ -1,0 +1,13 @@
+:root {
+    --header-bg-color:  #78b5ae;
+    --header-text-color: #212121;
+    --header-right-text-color: #757575;
+    --header-text-color-hover:#2196F3;
+}
+
+svg use{
+    fill:red;
+}
+svg use:hover {
+    fill: #78b5ae;
+}
