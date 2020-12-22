@@ -1,13 +1,229 @@
 :root {
-    --header-bg-color:  #78b5ae;
-    --header-text-color: #212121;
-    --header-right-text-color: #757575;
-    --header-text-color-hover:#2196F3;
+    --main-text-color: #212121;
+    --secondary-text-color: #757575;
+    --derative-color:#FFFFFF;
+    --accent-color:#2196F3;
+
+
+    --back-footer:#2F303A;
+    --back-accent:#F5F4FA;
 }
 
-svg use{
-    fill:red;
+@font-face {
+    font-family: 'Raleway';
+    src: url("../fonts/Raleway/static/Raleway-Bold.ttf");
+    font-weight: normal;
+    font-style: normal;
 }
-svg use:hover {
-    fill: #78b5ae;
+
+@font-face {
+    font-family: 'Roboto';
+    src: url("../fonts/Roboto/Roboto-black.ttf"),
+         url("../fonts/Roboto/Roboto-bold.ttf"),
+         url("../fonts/Roboto/Roboto-Regular.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+/*@font-face {*/
+/*    font-family: 'Roboto-bold';*/
+/*    src: url("../fonts/Roboto/Roboto-bold.ttf");*/
+/*    font-weight: normal;*/
+/*    font-style: normal;*/
+/*}*/
+/*@font-face {*/
+/*    font-family: 'Roboto-Regular';*/
+/*    src: url("../fonts/Roboto/Roboto-Regular.ttf");*/
+/*    font-weight: normal;*/
+/*    font-style: normal;*/
+/*}*/
+
+h1,h2,h3,h4,h5,h6{
+    margin: 0;
+}
+
+ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+button{
+    border: transparent;
+    outline: transparent;
+}
+p{
+    margin: 0;
+}
+
+
+
+
+
+.container{
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 15px ;
+}
+
+.nav {
+    padding: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav .logo{
+    font-family: 'Raleway', sans-serif;
+    color: var( --accent-color);
+    font-size: 24px;
+}
+
+.nav .logo span{
+    color: var(--main-text-color);
+}
+
+.icon-menu-mob {
+    width:24px;
+    height: 24px;
+    fill: var(--main-text-color);
+}
+
+.icon-menu-mob:hover,
+.icon-menu-mob:focus {
+    fill: var(--accent-color);
+}
+
+.banner{
+    max-width: 1600px;
+    height: 400px;
+    background:
+            url("../img/banner-overlay.png"),
+            url("../img/bg-banner-mobile.jpg");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 60px;
+
+}
+
+.banner-healing{
+    max-width: 360px;
+    margin-bottom: 30px;
+    color: var(--derative-color);
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 26px;
+    font-family: "Roboto", sans-serif ;
+    font-style: normal;
+    font-weight: 900;
+    letter-spacing: 0.06em;
+    line-height: 1.61;
+}
+
+.banner-btn{
+    padding: 10px 32px;
+    border-radius: 4px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    font-size: 16px;
+    line-height:  1.87;
+    background: var(--accent-color);
+    color: var(--derative-color);
+}
+
+.feature{
+    margin-bottom: 60px;
+}
+
+.feature-item:not(:last-child){
+    margin-bottom: 30px;
+}
+
+.feature-icon {
+    padding: 25px 0;
+    background: var(--back-accent);
+    text-align: center;
+    border-radius: 4px;
+}
+
+.feature-icon{
+    margin-bottom: 30px;
+}
+
+.feature-icon svg {
+    width: 63px;
+    height: 70px;
+}
+
+.feature-title{
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--main-text-color);
+    font-family:"Roboto-bold",sans-serif ;
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    line-height: 1.14;
+    margin-bottom: 10px;
+}
+
+.feature-text{
+    color: var(--secondary-text-color);
+    font-family:"Roboto-bold",sans-serif ;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+}
+
+
+.section-team{
+    background: var(--back-accent);
+    padding-top: 60px ;
+    padding-bottom: 60px ;
+}
+.heaking{
+    text-align: center;
+    font-family: "Roboto",sans-serif;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    color: var(--main-text-color);
+    margin-bottom: 30px;
+}
+
+.team-item{
+background: white;
+}
+
+.team-item  .photo{
+    display: block;
+    width: 450px;
+    margin: 0 auto;
+}
+
+.team-description{
+    width: 200px;
+    margin: 0 auto;
+}
+.team-description .name {
+    text-align: center;
+}
+.team-description .position  {
+    text-align: center;
+
+}
+
+.team-item .list-contact{
+    display: flex;
+    justify-content: space-between;
+}
+
+.team-item .social-icon svg{
+    fill:red;
+    width: 20px;
+    height: 20px;
 }
