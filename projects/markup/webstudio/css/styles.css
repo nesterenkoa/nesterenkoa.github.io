@@ -7,6 +7,7 @@
 
     --back-footer:#2F303A;
     --back-accent:#F5F4FA;
+    --color-social-icons:#AFB1B8;
 }
 
 @font-face {
@@ -20,7 +21,8 @@
     font-family: 'Roboto';
     src: url("../fonts/Roboto/Roboto-black.ttf"),
          url("../fonts/Roboto/Roboto-bold.ttf"),
-         url("../fonts/Roboto/Roboto-Regular.ttf");
+         url("../fonts/Roboto/Roboto-Regular.ttf"),
+         url("../fonts/Roboto/Roboto-Medium.ttf");
     font-weight: normal;
     font-style: normal;
 }
@@ -71,7 +73,7 @@ p{
     align-items: center;
 }
 
-.nav .logo{
+.logo{
     font-family: 'Raleway', sans-serif;
     color: var( --accent-color);
     font-size: 24px;
@@ -121,7 +123,7 @@ p{
     line-height: 1.61;
 }
 
-.banner-btn{
+.btn{
     padding: 10px 32px;
     border-radius: 4px;
     font-family: "Roboto", sans-serif;
@@ -131,8 +133,14 @@ p{
     line-height:  1.87;
     background: var(--accent-color);
     color: var(--derative-color);
+    cursor: pointer;
 }
 
+.btn:hover{
+    background: var(--derative-color);
+    color: var(--accent-color);
+    transition: 0.5s;
+}
 .feature{
     margin-bottom: 60px;
 }
@@ -179,12 +187,15 @@ p{
 }
 
 
-.section-team{
-    background: var(--back-accent);
+.section{
     padding-top: 60px ;
     padding-bottom: 60px ;
 }
-.heaking{
+
+.section-team{
+    background: var(--back-accent);
+}
+.healing{
     text-align: center;
     font-family: "Roboto",sans-serif;
     font-weight: 700;
@@ -196,34 +207,203 @@ p{
 }
 
 .team-item{
-background: white;
+    background: white;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px
+}
+
+.team-item:not(:last-child){
+    margin-bottom: 60px;
 }
 
 .team-item  .photo{
     display: block;
     width: 450px;
-    margin: 0 auto;
+    margin: 0 auto ;
 }
 
 .team-description{
     width: 200px;
+    padding:30px 32px;
     margin: 0 auto;
+    text-align: center;
+    font-size: 16px;
+    font-family:"Roboto", sans-serif;
+    line-height: 1.18;
+    letter-spacing: 0.03em;
 }
 .team-description .name {
-    text-align: center;
+    font-weight: 500;
+    color: var(--main-text-color);
+    margin-bottom: 10px;
+
 }
 .team-description .position  {
-    text-align: center;
+    color: var(--secondary-text-color);
+    font-weight: 400;
+    margin-bottom: 16px;
 
 }
 
-.team-item .list-contact{
+.list-contacts{
     display: flex;
     justify-content: space-between;
 }
 
-.team-item .social-icon svg{
-    fill:red;
+.list-contacts .social-icon{
+    box-sizing: border-box;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    padding: 12px;
+    cursor: pointer;
+}
+
+.list-contacts .social-icon svg{
+    fill:var(--color-social-icons);
     width: 20px;
     height: 20px;
+}
+
+.list-contacts .social-icon:hover,
+.list-contacts .social-icon:focus{
+    background: var(--accent-color);
+    transition: 0.5s;
+}
+.list-contacts .social-icon:hover svg,
+.list-contacts .social-icon:focus svg {
+    fill: var(--derative-color);
+    transition: 0.5s;
+}
+
+.clients-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.client-item{
+    width: calc((100% - 30px)/2);
+    padding: 20px 60px;
+    border: 1px solid #AFB1B8;
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+
+.client-item:hover,
+.client-item:focus{
+    border-color: var(--accent-color);
+    transition: 0.5s;
+}
+
+.client-item:hover .brand-icon,
+.client-item:focus .brand-icon{
+   fill: var(--accent-color);
+    transition: 0.5s;
+}
+
+.client-item:not(:nth-last-child(-n+2)){
+    margin-bottom: 30px;
+}
+
+.client-item .brand-icon{
+    max-width: 80px ;
+    max-height: 52px;
+    margin: 0 auto;
+    display: block;
+    cursor: pointer;
+    fill:#AFB1B8;
+}
+
+.footer{
+    background: var(--back-footer);
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    letter-spacing: 0.03em;
+
+}
+
+.footer .logo{
+    margin-bottom: 20px;
+}
+
+.footer .logo span{
+    color: var(--derative-color);
+}
+
+.footer .info{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.71;
+    margin-bottom: 60px;
+}
+
+.footer .address{
+    color: var(--derative-color);
+    margin-bottom: 8px;
+    font-style: normal;
+}
+
+.footer .contact{
+    display: block;
+    text-decoration: none;
+    color: var(--secondary-text-color);
+}
+
+.footer .contact:not(:last-child){
+    margin-bottom: 8px;
+}
+.footer .social-networks {
+    width: 206px;
+    margin: 0 auto;
+    margin-bottom: 60px;
+}
+
+.footer  .title{
+    color:var(--derative-color);
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.14;
+    margin-bottom:20px;
+}
+
+.footer .social-icon{
+    background:#44454e;
+}
+.footer .social-icon svg{
+    fill:var(--derative-color);
+}
+
+.footer .form{
+    margin-bottom: 20px;
+}
+.footer .form input{
+    width: 100%;
+    box-sizing: border-box;
+    background: transparent;
+    border: 1px solid #44454e;
+    border-radius: 4px;
+    padding: 15px;
+}
+.footer .form input[placeholder]{
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.25;
+}
+
+
+.advertising-mailing .btn svg{
+    fill: var(--derative-color);
+    width: 24px;
+    height: 24px;
+    margin-left: 10px;
+    margin-bottom: -5px;
+
+}
+.advertising-mailing .btn:hover svg{
+    fill: var(--accent-color);
+    transition: 0.5s;
 }
