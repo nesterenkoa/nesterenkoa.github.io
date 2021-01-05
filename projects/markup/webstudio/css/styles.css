@@ -55,7 +55,9 @@ button{
 p{
     margin: 0;
 }
-
+a{
+    text-decoration: none;
+}
 
 
 
@@ -67,9 +69,11 @@ p{
 }
 
 .nav {
-    padding: 16px;
+    font-family: "Roboto",sans-serif;
+    padding-top: 16px;
+    padding-bottom: 16px;
     display: flex;
-    justify-content: space-between;
+    /*justify-content: space-between;*/
     align-items: center;
 }
 
@@ -77,6 +81,7 @@ p{
     font-family: 'Raleway', sans-serif;
     color: var( --accent-color);
     font-size: 24px;
+    margin-right: 81px;
 }
 
 .nav .logo span{
@@ -93,13 +98,81 @@ p{
 .icon-menu-mob:focus {
     fill: var(--accent-color);
 }
+.nav .menu-tablet{
+    display: none;
+}
+
+.navigation  .navigation-item{
+    margin-right: 50px;
+}
+.navigation  .navigation-item:hover{
+
+}
+
+
+.navigation  .navigation-item:last-child {
+    margin-right: 0;
+}
+
+.navigation  .navigation-item a{
+    position: relative;
+    font-weight: 500;
+    font-size: 14px;
+    color: var(--main-text-color);
+    line-height: 1.17;
+}
+
+.navigation  .navigation-item:hover a{
+    color:var(--accent-color);
+}
+
+.navigation  .navigation-item a::after {
+    display: none;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    background: var(--accent-color);
+    left: 0;
+    bottom:-35px;
+    border-radius: 2px;
+}
+
+.navigation  .navigation-item a:focus::after,
+.navigation  .navigation-item a:hover::after {
+    display: block;
+}
+.nav .contacts{
+    margin-left: auto;
+}
+.nav .contacts  a{
+    display: block;
+    color: var(--secondary-text-color);
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+    margin-bottom: 10px;
+
+}
+.nav .contacts  a:last-child{
+    margin-bottom: 0;
+}
+
+.nav .contacts  a svg {
+    width: 14px;
+    height: 14px;
+    fill: var(--secondary-text-color);
+    margin-right: 8px;
+}
+
 
 .banner{
     max-width: 1600px;
     height: 400px;
     background:
-            url("../img/banner-overlay.png"),
-            url("../img/bg-banner-mobile.jpg");
+            url("../img/img-overlay.png"),
+            url("../img/bg-banner-mobile.jpg") center;
     background-size: cover;
     display: flex;
     flex-direction: column;
@@ -145,8 +218,12 @@ p{
     margin-bottom: 60px;
 }
 
-.feature-item:not(:last-child){
+.feature-item{
     margin-bottom: 30px;
+}
+
+.feature-item:last-child {
+    margin-bottom: 0;
 }
 
 .feature-icon {
@@ -207,18 +284,19 @@ p{
 }
 
 .team-item{
+    margin: 0 auto 60px;
     background: white;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 0px 0px 4px 4px
+    border-radius: 0px 0px 4px 4px;
 }
 
-.team-item:not(:last-child){
-    margin-bottom: 60px;
+.team-item:last-child{
+    margin-bottom: 0;
 }
 
 .team-item  .photo{
     display: block;
-    width: 450px;
+    width: 100%;
     margin: 0 auto ;
 }
 
@@ -289,6 +367,7 @@ p{
     border: 1px solid #AFB1B8;
     box-sizing: border-box;
     border-radius: 4px;
+    margin-bottom: 30px;
 }
 
 .client-item:hover,
@@ -303,8 +382,8 @@ p{
     transition: 0.5s;
 }
 
-.client-item:not(:nth-last-child(-n+2)){
-    margin-bottom: 30px;
+.client-item:nth-last-child(-n+2){
+    margin-bottom: 0;
 }
 
 .client-item .brand-icon{
@@ -326,6 +405,7 @@ p{
 
 .footer .logo{
     margin-bottom: 20px;
+
 }
 
 .footer .logo span{
@@ -407,3 +487,100 @@ p{
     fill: var(--accent-color);
     transition: 0.5s;
 }
+
+@media (min-width: 480px) {
+    .team-item{
+        width: 450px;
+    }
+}
+
+@media (max-width: 479px) {
+    .client-item{
+        padding: 20px;
+    }
+    .feature-text{
+        text-align: center;
+    }
+}
+@media (min-width: 520px){
+    .feature-text{
+        text-align: center;
+    }
+}
+
+/*tablet*/
+@media (min-width: 768px){
+    .nav{
+        padding-top:21px;
+        padding-bottom: 21px;
+    }
+
+    .nav .menu-mobile{
+        display: none;
+    }
+
+   .nav .menu-tablet {
+        display:flex;
+         flex:1;
+        align-items: center;
+    }
+
+    .banner{
+        background:url("../img/img-overlay.png"),
+                url("../img/banner-tablet.jpg") center;
+        background-size: cover;
+
+    }
+
+    .flex-row-tab{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .feature-item{
+        width: calc((100% - 30px)/2);
+    }
+
+    .feature-item:nth-last-child(-n+2){
+        margin-bottom: 0;
+    }
+
+
+    .team-item{
+        width: calc((100% - 30px)/2);
+        margin:0 0 30px;
+    }
+
+    .team-item:nth-last-child(-n+2){
+        margin-bottom: 0;
+    }
+
+    .client-item {
+        width: calc((100% - 60px) / 3);
+        padding: 18px 44px;
+    }
+
+    .client-item:nth-last-child(-n+3){
+        margin-bottom: 0;
+    }
+
+   .footer .flex-row-tab{
+       align-items: baseline;
+      justify-content: space-around;
+   }
+
+
+.footer .social-networks{
+    margin: 0 0 60px;
+}
+
+.footer .advertising-mailing{
+      width: 100%;
+   }
+
+  .footer .form input{
+      width: 450px;
+  }
+}
+
