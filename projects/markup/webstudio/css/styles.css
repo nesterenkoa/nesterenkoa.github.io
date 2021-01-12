@@ -191,9 +191,28 @@ fill: var(--accent-color);
     align-items: center;
     margin: auto;
     margin-bottom: 60px;
-
+}
+@media screen and (min-device-pixel-ratio: 2),
+screen and (min-resolution: 192dpi),
+screen and (min-resolution: 2dppx){
+    .banner{
+   background:
+           url("../img/img-overlay.png"),
+           url("../img/banner-mob-2x.jpg")  center;
+        background-size: cover;
+    }
 }
 
+@media screen and (min-device-pixel-ratio: 3),
+screen and (min-resolution: 288dpi),
+screen and (min-resolution: 3dppx){
+    .banner{
+        background:
+                url("../img/img-overlay.png"),
+                url("../img/banner-mob-3x.jpg")  center;
+        background-size: cover;
+    }
+}
 .banner-healing{
     max-width: 360px;
     margin-bottom: 30px;
@@ -569,7 +588,26 @@ fill: var(--accent-color);
         background:url("../img/img-overlay.png"),
                 url("../img/banner-tablet.jpg") center;
         background-size: cover;
+    }
 
+    @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx){
+        .banner{
+            background:url("../img/img-overlay.png"),
+                        url("../img/banner-tablet-2x.jpg") center;
+            background-size: cover;
+        }
+    }
+
+    @media screen and (min-device-pixel-ratio: 3),
+    screen and (min-resolution: 288dpi),
+    screen and (min-resolution: 3dppx) {
+        .banner {
+            background: url("../img/img-overlay.png"),
+            url("../img/banner-tablet-3x.jpg") center;
+            background-size: cover;
+        }
     }
 
     .flex-row{
@@ -650,7 +688,26 @@ fill: var(--accent-color);
         background-size: cover;
         height: 600px;
         margin-bottom: 94px;
+    }
 
+    @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx){
+        .banner{
+            background:url("../img/img-overlay.png"),
+                        url("../img/banner-des-2x.jpg") center;
+            background-size: cover;
+        }
+    }
+
+    @media screen and (min-device-pixel-ratio: 3),
+    screen and (min-resolution: 288dpi),
+    screen and (min-resolution: 3dppx) {
+        .banner {
+            background: url("../img/img-overlay.png"),
+                        url("../img/banner-des-3x.jpg") center;
+            background-size: cover;
+        }
     }
 
     .section{
