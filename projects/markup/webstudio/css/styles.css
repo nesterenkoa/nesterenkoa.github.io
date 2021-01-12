@@ -62,7 +62,10 @@ img{
     display: block;
 }
 
-
+::selection{
+    background: var(--accent-color);
+    color: var(--derative-color);
+}
 
 
 .container{
@@ -361,7 +364,7 @@ screen and (min-resolution: 3dppx){
 }
 
 .team-description{
-    width: 200px;
+    max-width: 200px;
     padding:30px 32px;
     margin: 0 auto;
     text-align: center;
@@ -403,13 +406,12 @@ screen and (min-resolution: 3dppx){
     height: 20px;
 }
 
-.list-contacts .social-icon:hover,
-.list-contacts .social-icon:focus{
+.list-contacts .social-icon:hover{
     background: var(--accent-color);
     transition: 0.5s;
 }
-.list-contacts .social-icon:hover svg,
-.list-contacts .social-icon:focus svg {
+
+.list-contacts .social-icon:hover svg{
     fill: var(--derative-color);
     transition: 0.5s;
 }
