@@ -621,9 +621,9 @@ screen and (min-resolution: 3dppx){
    .nav .menu-tablet {
        position: relative;
        padding: 0;
-        display:flex;
-          flex:1;
-        align-items: center;
+       display:flex;
+       flex:1;
+       align-items: center;
     }
     .nav .menu-tablet .navigation{
         margin-bottom: 0;
@@ -634,9 +634,13 @@ screen and (min-resolution: 3dppx){
         margin-bottom: 0;
     }
 
-    .menu-tablet  .navigation  .navigation-item:last-child {
+    .menu-tablet .navigation .navigation-item:last-child {
         margin-right: 0;
     }
+    .menu-tablet .navigation .navigation-item a::after {
+        bottom: -34px;
+    }
+
 
     .nav .menu-tablet .contacts{
         margin-right:0;
@@ -810,6 +814,10 @@ screen and (min-resolution: 3dppx){
     .footer .flex-row{
         align-items: baseline;
         justify-content: space-between;
+    }
+
+    .footer .info{
+        margin-bottom: 0;
     }
 
     .footer .advertising-mailing{
