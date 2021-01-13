@@ -9,20 +9,22 @@
 
 </head>
 <body>
-<header>
+<header  class="header">
 
   <nav class="nav container">
 
     <div class="logo">Web <span>Studio</span></div>
 
-    <button class="menu-mobile">
-      <svg class="icon-menu-mob">
-        <use href="./img/symbol-defs.svg#menu_24px"></use>
-        <use href="./img/symbol-defs.svg#close-menu"></use>
+    <button class="menu-mobile-hamburger"
+            aria-expanded="false"
+            data-menu-button>
+      <svg class="icon-menu-mob" aria-label="Переключатель мобильного меню">
+        <use  class="icon-cross" href="./img/symbol-defs.svg#close-menu"></use>
+        <use  class="icon-menu" href="./img/symbol-defs.svg#menu_24px"></use>
       </svg>
     </button>
 
-    <div class="menu-tablet">
+    <div class="menu-tablet menu-mobile" data-menu>
     <ul class="navigation flex-row ">
       <li class="navigation-item"><a href="#">Студия</a></li>
       <li class="navigation-item"><a href="#">Портфолио</a></li>
@@ -47,6 +49,7 @@
 
     </div>
   </nav>
+</header>
 
   <main>
     <section class="banner">
@@ -430,7 +433,6 @@
     </div>
 
   </footer>
-
-</header>
+  <script  src="./js/main.js"></script>
 </body>
 </html>
