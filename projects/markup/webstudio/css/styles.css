@@ -286,6 +286,119 @@ screen and (min-resolution: 3dppx){
     color: var(--accent-color);
     transition: 0.5s;
 }
+
+.modal {
+    max-width: 450px;
+    box-sizing: border-box;
+    background: white;
+    padding: 40px;
+}
+
+.modal-healing{
+    font-family: "Roboto",sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.5;
+    color: black;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.modal-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.modal-form .form-field{
+    position: relative;
+    margin-bottom: 28px;
+    width: 100%;
+
+}
+.modal-form .form-field:last-child {
+    margin-bottom: 0;
+}
+
+.modal-form *:not([type="checkbox"]){
+    width: 100%;
+    box-sizing: border-box;
+}
+ .modal-form .checkbox-label .checkbox{
+     -webkit-appearance:none;
+     -moz-appearance:none;
+     appearance:none;
+     position: absolute;
+ }
+
+.modal-form .checkbox-icon {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border:2px solid black;
+    border-radius: 2px;
+    margin-right: 5px;
+    margin-left: -4px;
+}
+
+.modal-form .checkbox:checked + .checkbox-icon{
+    background: #2196F3;
+    background-image: url("../img/check.svg");
+    background-position: center;
+    background-repeat: no-repeat ;
+    background-origin: border-box;
+    border-color:#2196F3;
+}
+.modal-form  .form-input,
+.modal-form  .form-com{
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    padding: 12px 40px;
+}
+.modal-form .form-com{
+    padding: 12px 19px;
+    resize: none;
+    height: 170px;
+    margin-bottom: 20px;
+}
+
+.modal-form .form-field .icon{
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    left: 19px;
+    top:50%;
+    transform: translateY(-50%);
+}
+.modal-form .form-label{
+    position: absolute;
+    left: 42px;
+    top: 50%;
+    width: auto;
+    transform: translateY(-50%);
+    transition: transform 250ms linear;
+    color: #757575;
+    /*font-family: "Roboto",sans-serif;*/
+    font-weight: normal;
+    font-size: 14px;
+}
+
+.modal-form .form-input:focus  + .form-label{
+    transform: translateY(-45px);
+    left: 16px;
+    color: var(--accent-color);
+}
+
+.modal-form .form-input:not(:placeholder-shown) + .form-label{
+    transform: translateY(-45px);
+    left: 16px;
+    color: var(--accent-color);
+
+}
+.modal-form .form-input:focus ~ .icon{
+    fill: var(--accent-color);
+}
+
+
+
 .feature{
     margin-bottom: 60px;
 }
