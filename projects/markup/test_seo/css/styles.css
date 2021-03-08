@@ -26,18 +26,7 @@
     font-weight: normal;
     font-style: normal;
 }
-/*@font-face {*/
-/*    font-family: 'Roboto-bold';*/
-/*    src: url("../fonts/Roboto/Roboto-bold.ttf");*/
-/*    font-weight: normal;*/
-/*    font-style: normal;*/
-/*}*/
-/*@font-face {*/
-/*    font-family: 'Roboto-Regular';*/
-/*    src: url("../fonts/Roboto/Roboto-Regular.ttf");*/
-/*    font-weight: normal;*/
-/*    font-style: normal;*/
-/*}*/
+
 
 h1,h2,h3,h4,h5,h6{
     margin: 0;
@@ -222,9 +211,6 @@ fill: var(--accent-color);
 .banner{
     max-width: 1600px;
     height: 400px;
-    /*background:*/
-    /*        url("../img/img-overlay.png"),*/
-    /*        url("../img/bg-banner-mobile.jpg") center;*/
     background: url("../img/img-overlay.png"),
                 url("../img/banner_black-dating.jpg") center;
     background-size: cover;
@@ -235,28 +221,7 @@ fill: var(--accent-color);
     margin: auto;
     margin-bottom: 60px;
 }
-/*@media screen and (min-device-pixel-ratio: 2),*/
-/*screen and (min-resolution: 192dpi),*/
-/*screen and (min-resolution: 2dppx){*/
-/*    .banner{*/
-/*        background:*/
-/*           url("../img/img-overlay.png"),*/
-/*           url("../img/banner_black-dating.jpg");*/
-/*        background-size: cover;*/
-/*    }*/
-/*}*/
 
-/*@media screen and (min-device-pixel-ratio: 3),*/
-/*screen and (min-resolution: 288dpi),*/
-/*screen and (min-resolution: 3dppx){*/
-/*    .banner{*/
-/*        !*background:*!*/
-/*        !*        url("../img/img-overlay.png"),*!*/
-/*        url("../img/banner_black-dating.jpg");*/
-/*        background: url("../img/banner_black-dating.jpg");*/
-/*        background-size: cover;*/
-/*    }*/
-/*}*/
 .banner-healing{
     max-width: 360px;
     margin-bottom: 30px;
@@ -292,10 +257,6 @@ fill: var(--accent-color);
     color: var(--accent-color);
     transition: 0.5s;
 }
-
-/*.feature{*/
-/*    margin-bottom: 60px;*/
-/*}*/
 
 .feature-item{
     margin-bottom: 30px;
@@ -352,10 +313,6 @@ fill: var(--accent-color);
 .section{
     padding-top: 60px ;
     padding-bottom: 60px ;
-}
-
-.section-service{
-
 }
 
 .service-item{
@@ -575,9 +532,7 @@ fill: var(--accent-color);
     .client-item{
         padding: 20px;
     }
-    /*.feature-text{*/
-    /*    text-align: center;*/
-    /*}*/
+
 }
 
 @media (min-width: 768px){
@@ -629,28 +584,6 @@ fill: var(--accent-color);
             url("../img/banner_black-dating.jpg");
         background-size: cover;
     }
-
-    /*@media screen and (min-device-pixel-ratio: 2),*/
-    /*screen and (min-resolution: 192dpi),*/
-    /*screen and (min-resolution: 2dppx){*/
-    /*    .banner{*/
-    /*        !*background:url("../img/img-overlay.png"),*!*/
-    /*        !*            url("../img/banner-tablet-2x.jpg") center;*!*/
-    /*        background: url("../img/banner_black-dating.jpg");*/
-    /*        background-size: cover;*/
-    /*    }*/
-    /*}*/
-
-    /*@media screen and (min-device-pixel-ratio: 3),*/
-    /*screen and (min-resolution: 288dpi),*/
-    /*screen and (min-resolution: 3dppx) {*/
-    /*    .banner {*/
-    /*        !*background: url("../img/img-overlay.png"),*!*/
-    /*        !*url("../img/banner-tablet-3x.jpg") center;*!*/
-    /*        background: url("../img/banner_black-dating.jpg");*/
-    /*        background-size: cover;*/
-    /*    }*/
-    /*}*/
 
     .flex-row{
         display: flex;
@@ -733,31 +666,6 @@ fill: var(--accent-color);
         height: 600px;
         margin-bottom: 94px;
     }
-
-    /*@media screen and (min-device-pixel-ratio: 2),*/
-    /*screen and (min-resolution: 192dpi),*/
-    /*screen and (min-resolution: 2dppx){*/
-    /*    .banner{*/
-    /*        !*background:url("../img/img-overlay.png"),*!*/
-    /*        !*            url("../img/banner-des-2x.jpg") center;*!*/
-    /*        background: url("../img/banner_black-dating.jpg");*/
-    /*        background-size: cover;*/
-
-    /*    }*/
-    /*}*/
-
-    /*@media screen and (min-device-pixel-ratio: 3),*/
-    /*screen and (min-resolution: 288dpi),*/
-    /*screen and (min-resolution: 3dppx) {*/
-    /*    .banner {*/
-    /*    !*    background: url("../img/img-overlay.png"),*!*/
-    /*    !*                url("../img/banner-des-3x.jpg") center;*!*/
-    /*    background: url("../img/banner_black-dating.jpg");*/
-    /*    background-size: cover;*/
-
-
-    /*    }*/
-    /*}*/
 
     .section{
         padding-top: 94px;
@@ -954,7 +862,6 @@ fill: var(--accent-color);
         margin-bottom: 0;
     }
 }
-
 
 @media (min-width: 1200px) {
     .team-item {
