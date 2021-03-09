@@ -56,7 +56,6 @@ img{
     color: var(--derative-color);
 }
 
-
 .container{
     max-width: 1170px;
     margin: 0 auto;
@@ -89,7 +88,6 @@ img{
 .nav .menu-mobile-hamburger{
     background: transparent;
 }
-
 
 .menu-mobile-hamburger .icon-menu-mob {
     width: 24px;
@@ -751,6 +749,14 @@ fill: var(--accent-color);
     margin-bottom: 20px;
 }
 
+.page-studio-info{
+    font-size: 16px;
+    line-height: 1.5;
+    font-family: "Roboto-bold", sans-serif;
+    color: var(--secondary-text-color);
+    text-align: justify;
+}
+
 .page-studio-info .title{
     margin-bottom: 15px;
     color: #2196f3;
@@ -762,6 +768,7 @@ fill: var(--accent-color);
     margin-bottom: 15px;
     text-align: justify;
     line-height: 1.5;
+    font-family: "Roboto-bold", sans-serif;
 }
 
 .page-studio-list .item{
@@ -801,12 +808,8 @@ fill: var(--accent-color);
 
 /*page aboutUs*/
 
-.page-aboutUs .text {
+.page-aboutUs .description {
     margin-bottom: 30px;
-    color: var(--secondary-text-color);
-    text-align: justify;
-    font-size: 18px;
-    line-height: 1.5;
 }
 .team-item{
     margin: 0 auto 60px;
